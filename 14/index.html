@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	
+
+<p id="currency"></p>
+
+<script>	
+	var currency = document.getElementById('currency');
+	var xhr = new XMLHttpRequest();
+	xhr.open('GET', 'https://api.privatbank.ua/p24api/pubinfo?json&exchange&coursid=3', false);
+
+	xhr.send();
+
+	if (xhr.status != 200) {
+	  alert(xhr.status + ': ' + xhr.statusText );  
+	} else {
+	     currency.textContent = xhr.responseText;
+	}
+</script>
+</body>
+</html>
