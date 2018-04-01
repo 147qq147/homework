@@ -1,0 +1,48 @@
+extends layout
+	
+block content
+	.carousel-wrapper
+		.carousel-text
+			h1.text-white Купи Кота!!!
+			p.text-success Женщинам за 40 скидка!
+		#carouselExampleControls.carousel.slide(data-ride='carousel')
+			.carousel-inner
+				.carousel-item.active
+					img.d-block.w-100(src='http://www.korins.ru/data/posts/000/000/252/252-show.jpg?1449334562', alt='First slide')
+				.carousel-item
+					img.d-block.w-100(src='https://i.pinimg.com/originals/78/54/32/785432c04669ca24eda64af6c1e911e1.jpg', alt='Second slide')
+				.carousel-item
+					img.d-block.w-100(src='https://img00.deviantart.net/8ecc/i/2013/020/2/3/grumpy_cat_moon_wallpaper_by_magnaen-d5s4wpb.jpg', alt='Third slide')
+			a.carousel-control-prev(href='#carouselExampleControls', role='button', data-slide='prev')
+				span.carousel-control-prev-icon(aria-hidden='true')
+				span.sr-only Previous
+			a.carousel-control-next(href='#carouselExampleControls', role='button', data-slide='next')
+				span.carousel-control-next-icon(aria-hidden='true')
+				span.sr-only Next
+	.container
+		h1.text-center.text-primary Всего за 99,99$ эти коты могут стать Вашими!
+		.cards-wrap.d-flex
+			.card(style='width: 18rem;')
+				img.card-img-top(src='https://www.lovecat.in.ua/wp-content/uploads/2016/11/3651850_6839b9c6-700x400.jpg', alt='Card image cap')
+				.card-body
+					h5.card-title Хлебокот
+					p.card-text
+						| Some quick example text to build on the card title and make up the bulk of the card's content.
+					a.btn.btn-success(href='/contacts') Купить Кота
+
+			.card(style='width: 18rem;')
+				img.card-img-top(src='http://pimg.mycdn.me/getImage?disableStub=true&type=VIDEO_S_720&url=http%3A%2F%2Fvdp.mycdn.me%2FgetImage%3Fid%3D8459322700%26idx%3D30%26thumbType%3D47%26f%3D1%26i%3D1&signatureToken=SYPhhLPToLr5lVedMyAXKw', alt='Card image cap')
+				.card-body
+					h5.card-title Котовейдер
+					p.card-text
+						| Some quick example text to build on the card title and make up the bulk of the card's content.
+					a.btn.btn-success(href='/contacts') Купить Кота
+
+			.card(style='width: 18rem;')
+				img.card-img-top(src='https://i.ytimg.com/vi/yVDqayNw8LU/maxresdefault.jpg', alt='Card image cap')
+				.card-body
+					h5.card-title Орущий кот
+					p.card-text
+						| Some quick example text to build on the card title and make up the bulk of the card's content.
+					a.btn.btn-success(href='/contacts') Купить Кота
+

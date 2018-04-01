@@ -1,0 +1,40 @@
+doctype html
+html(lang="ru")
+	head
+		meta(charset="UTF-8")
+		meta(http-equip="X-UA-Compatible", content="IE-edge")
+		meta(name="viewport", content="width=device-width, initial-scale=1")
+		title= title
+		link(rel="stylesheet", href="/css/bootstrap.min.css")
+		link(rel="stylesheet", href="/style.css")
+
+		script(src="/jquery.min.js")
+	body
+		nav.navbar.navbar-expand-lg.fixed-top.navbar-dark.bg-primary
+			.container.justify-content-between
+				a.navbar-brand(href="/")
+					img(src="https://avatanplus.com/files/resources/mid/595ce20b785e115d12d2fce5.png" width="80" height="80")
+					span Котарсис
+
+				div
+					ul.navbar-nav.mr-auto
+						li.nav-item.active
+							a.nav-link(href="/") Главная
+
+						li.nav-item
+							a.nav-link(href="/about-us") О нас
+
+						li.nav-item
+							a.nav-link(href="/contacts") Контакты
+
+		.main-content
+			block content
+
+		div.footer.bg-primary.text-white.d-flex
+			span Copyright 2018
+
+		script(src="/js/bootstrap.min.js")
+		script.
+			$('.carousel').carousel()
+
+

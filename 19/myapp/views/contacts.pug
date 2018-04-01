@@ -1,0 +1,14 @@
+extends layout
+	
+block content
+	.conteiner
+		.form-wrapper.d-flex
+			h1.text-warning Заполните заявку и мы с Вами свяжемся!
+			form(action="/contacts", method="post")
+				.form-group
+					label(for='exampleInputEmail1') Ваше Имя
+					input#exampleInputEmail1.form-control(type='text',name='name', aria-describedby='emailHelp', placeholder='Введите Имя')
+				.form-group
+					label(for='exampleInputPassword1') Ваш телефон
+					input#exampleInputPassword1.form-control(type=tel,,name='tel' placeholder='Телефон')
+				button.btn.btn-primary(type='submit') Отправить
